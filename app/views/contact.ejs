@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <% include header %>
+</head>
+
+<body>
+
+    <% include navBar %>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-12">
+                        <hr>
+                        <h2 class="intro-text text-center">Contact
+                        <strong>ME</strong>
+                    </h2>
+                        <hr>
+                    </div>
+                    <!-- Embedded Google Map from http://embedgooglemaps.com/en/ -->
+                    <div class="col-md-8">
+                        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:740px;'><div id='gmap_canvas' style='height:440px;width:740px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google map							</a></small></div><div><small><a href="https:/www.googlemapsgenerator.com/">generate Google Maps</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:9,center:new google.maps.LatLng(43.7767268,-79.22590630000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.7767268,-79.22590630000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Albert resides here!</strong><br>Scarborough, M1G 2W3<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Phone:
+                            <strong>(437) 345-2424</strong>
+                        </p>
+                        <p>Email:
+                            <strong><a href="mailto:albertmonteiro@live.com">albertmonteiro@live.com</a></strong>
+                        </p>
+                        <p>Address:
+                            <strong>Scarborough, ON - M1G 2W3</strong>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-12">
+                        <hr>
+                        <h2 class="intro-text text-center">Contact
+                        <strong>form</strong>
+                    </h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus repudiandae
+                            cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum sapiente optio
+                            deleniti consequuntur eos voluptatem.</p>
+                        <form role="form">
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Phone Number</label>
+                                    <input type="tel" class="form-control">
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-lg-12">
+                                    <label>Message</label>
+                                    <textarea class="form-control" rows="6"></textarea>
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </div>
+                            </div>
+                            <div>
+                            <h2 class="intro-text text-right">Follow
+                                <strong> ME </strong>on
+                            </h2>
+                            <p align="right">
+                                <a href="https://www.linkedin.com/in/albert-monteiro-53793768?trk=hp-identity-photo" target="_blank"><img title="LinkedIn" src="../img/linkedin.png" alt="LinkedIn" width="35" height="35"/></a>
+                                <a href="https://www.facebook.com/albert.c.monteiro" target="_blank"><img title="Facebook" src="../img/facebook.png" alt="Facebook" width="35" height="35"/></a>
+                                <a href="https://twitter.com/monteiroalbert" target="_blank"><img title="Twitter" src="../img/twitter.png" alt="Twitter" width="35" height="35"/></a>
+                                <a href="https://www.instagram.com/albert.monteiro/" target="_blank"><img title="Instagram" src="../img/instagram.png" alt="Instagram" width="35" height="35"/></a>
+                            </p></div>
+                        </form>
+                        <div>
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                <form action="" method="POST" enctype="multipart/form-data">
+    <input name="action" value="submit" type="hidden"> Your name:<br>
+    <input name="name" size="30" type="text"><br> Your email:<br>
+    <input name="email" size="30" type="text"><br> Your message:<br>
+    <textarea name="message" rows="7" cols="30">
+    </textarea><br>
+    <input value="Send email" type="submit">
+    </form>-->
+
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+        <footer>
+            <% include footer %>
+        </footer>
+
+
+
+</body>
+
+</html>
